@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastic Search Query Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Elastic Search Query Generator</h1>
+        <div id="query-builder">
+            <button onclick="addFieldExists()">Add Field Exists</button>
+            <button onclick="addMatchPhrase()">Match Phrase</button>
+            <button onclick="addAggregation()">Aggregation</button>
+            <button onclick="addSize()">Size</button>
+        </div>
+        <textarea id="generated-query" readonly></textarea>
+        <button onclick="executeQuery()">Execute Query</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="utils.js"></script>
+</body>
+</html>
